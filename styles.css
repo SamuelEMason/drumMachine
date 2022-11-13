@@ -1,0 +1,79 @@
+body {
+	background-color: rgb(53, 53, 53);
+	background-repeat:no-repeat;
+	font-family: 'Anybody', cursive;
+	font-family: 'Comfortaa', cursive;
+	color: rgba(213, 194, 232, 0.818);
+	font-size: larger;
+}
+
+.screen {
+	background-color: rgba(255, 255, 255, 0);
+	width: 90vw;
+	height: 90vh;
+	margin: 35px auto;
+	box-shadow: 10px 10px 500px rgb(51, 138, 153) , 0px 10px 2px rgb(0, 0, 0) ,
+	10px 0px 2px rgb(0, 0, 0) , -10px 0px 2px rgb(0, 0, 0), 0px -10px 2px rgb(0, 0, 0);
+}
+
+header {
+	background-color: #e7dcaea2;
+	color: #e13d3d;
+	text-align: end;
+	padding: 40px;
+	margin-bottom: 50px;
+	border: 1px solid rgb(28, 18, 18);
+	box-shadow: inset 10px 10px 100px rgba(99, 16, 16, 0.638);
+}
+
+.container {
+	border: none;
+	/* box-shadow: inset -5px -150px 500px rgba(255, 255, 0, 0.295); */
+	margin: 0 auto;
+	padding: 15px;
+	width: fit-content;
+	height: fit-content;
+	border-radius: 15px;
+	box-shadow: inset 10px 10px 100px rgba(227, 5, 5, 0.338);
+}
+
+.container {
+	/* background-image: url('images/paul-pastourmatzis-KT3WlrL_bsg-unsplash.jpg'); */
+	background-color: rgba(234, 220, 213, 0.832);
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 5px;
+	justify-items: center;
+}
+
+.pad-wrapper {
+	background-color: rgba(255, 111, 0, 0.181);
+	width: 18vw;
+	height: 15vh;
+	display: grid;
+	grid-template-rows: 25px 1fr;
+
+}
+
+.sample {
+	color: rgba(17, 119, 171, 0.874);
+	text-shadow: 1px 1px 10px rgba(255, 255, 0, 0.311);
+	text-align: justify;
+	letter-spacing: 0.1em;
+	border: 2px solid rgba(0, 0, 0, 0.108);
+}
+
+.drum {
+	border: none;
+	border-radius: 0px;
+	color: black;
+	box-shadow: 1px 1px 5px black , inset -1px -1px 5px black;
+}
+
+.drum:hover {
+	background-color: rgba(8, 136, 123, 0.385);
+}
+
+.drum:active {
+	background-color: rgba(255, 85, 0, 0.827);
+}
