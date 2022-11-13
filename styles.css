@@ -26,6 +26,11 @@ header {
 	box-shadow: inset 10px 10px 100px rgba(99, 16, 16, 0.638);
 }
 
+header>#logo {
+	background-color: rgb(5, 5, 35);
+	border: 1px solid rgba(255, 255, 255, 0.327);
+}
+
 .container {
 	border: none;
 	/* box-shadow: inset -5px -150px 500px rgba(255, 255, 0, 0.295); */
@@ -48,7 +53,7 @@ header {
 
 .pad-wrapper {
 	background-color: rgba(255, 111, 0, 0.181);
-	width: 18vw;
+	width: 15vw;
 	height: 15vh;
 	display: grid;
 	grid-template-rows: 25px 1fr;
