@@ -20,18 +20,20 @@ body {
 header {
 	background-color: #e7dcaea2;
 	color: #e13d3d;
-	text-align: end;
+	display: flex;
+	justify-content: end;
 	padding: 40px;
 	margin-bottom: 50px;
 	border: 1px solid rgb(28, 18, 18);
 	box-shadow: inset 10px 10px 100px rgba(194, 170, 35, 0.516);
 }
 
-header>#logo {
+
+
+header>div>#logo {
 	background-color: rgb(5, 5, 35);
 	border: 1px solid rgba(255, 255, 255, 0.327);
 }
-
 
 .container {
 	border: none;
