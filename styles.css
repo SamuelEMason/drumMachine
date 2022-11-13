@@ -5,6 +5,7 @@ body {
 	font-family: 'Comfortaa', cursive;
 	color: rgba(213, 194, 232, 0.818);
 	font-size: larger;
+
 }
 
 .screen {
@@ -39,7 +40,7 @@ header>#logo {
 	width: fit-content;
 	height: fit-content;
 	border-radius: 15px;
-	box-shadow: inset 10px 10px 100px rgba(227, 5, 5, 0.338);
+	box-shadow: inset 10px 10px 100px rgba(5, 227, 227, 0.158);
 }
 
 .container {
@@ -52,12 +53,11 @@ header>#logo {
 }
 
 .pad-wrapper {
-	background-color: rgba(255, 111, 0, 0.181);
+	background-color: rgba(7, 91, 133, 0.364);
 	width: 15vw;
 	height: 15vh;
 	display: grid;
 	grid-template-rows: 25px 1fr;
-
 }
 
 .sample {
@@ -72,11 +72,11 @@ header>#logo {
 	border: none;
 	border-radius: 0px;
 	color: black;
-	box-shadow: 1px 1px 5px black , inset -1px -1px 5px black;
+	box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.452);
 }
 
 .drum:hover {
-	background-color: rgba(8, 136, 123, 0.385);
+	background-color: rgba(8, 166, 150, 0.385);
 }
 
 .drum:active {
