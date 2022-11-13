@@ -6,6 +6,11 @@ document.querySelectorAll('.drum').forEach( (button) => {
 	
 document.addEventListener('keydown', function (e) {
 	makeSound(e.key);
+	padColorChange(e.key, 'rgba(255, 85, 0, 0.827)');
+});
+
+document.addEventListener('keyup', function (e) {
+	padColorChange(e.key, 'white');
 });
 
 
@@ -72,4 +77,6 @@ function makeSound(key) {
 	}
 }
 
-
+function padColorChange(id, color) {
+	document.getElementById(id).style.backgroundColor = color;
+}

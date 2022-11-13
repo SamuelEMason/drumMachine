@@ -24,7 +24,7 @@ header {
 	padding: 40px;
 	margin-bottom: 50px;
 	border: 1px solid rgb(28, 18, 18);
-	box-shadow: inset 10px 10px 100px rgba(99, 16, 16, 0.638);
+	box-shadow: inset 10px 10px 100px rgba(194, 170, 35, 0.516);
 }
 
 header>#logo {
@@ -48,12 +48,12 @@ header>#logo {
 	background-color: rgba(234, 220, 213, 0.832);
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 5px;
+	grid-gap: 10px;
 	justify-items: center;
 }
 
 .pad-wrapper {
-	background-color: rgba(7, 91, 133, 0.364);
+	background-color: rgb(1, 39, 57);
 	width: 15vw;
 	height: 15vh;
 	display: grid;
@@ -61,18 +61,22 @@ header>#logo {
 }
 
 .sample {
-	color: rgba(17, 119, 171, 0.874);
+	color: rgba(230, 98, 98, 0.796);
 	text-shadow: 1px 1px 10px rgba(255, 255, 0, 0.311);
-	text-align: justify;
+	text-align: center;
+	justify-items: center;
+	font-size: small;
 	letter-spacing: 0.1em;
+	box-shadow: inset 1px 1px 3px black;
 	border: 2px solid rgba(0, 0, 0, 0.108);
 }
 
 .drum {
 	border: none;
-	border-radius: 0px;
+	border-radius: 1px;
 	color: black;
-	box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.452);
+	background-color: white;
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.264);
 }
 
 .drum:hover {
