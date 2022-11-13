@@ -6,11 +6,12 @@ document.querySelectorAll('.drum').forEach( (button) => {
 	
 document.addEventListener('keydown', function (e) {
 	makeSound(e.key);
-	padColorChange(e.key, 'rgba(255, 85, 0, 0.827)');
+	buttonAnimation(e.key, 'rgba(255, 85, 0, 0.827)');
+	
 });
 
 document.addEventListener('keyup', function (e) {
-	padColorChange(e.key, 'white');
+	buttonAnimation(e.key, 'white');
 });
 
 
@@ -20,52 +21,52 @@ function makeSound(key) {
 	switch(key) {
 
 		case '1':
-			sample = 'samples/musicradar-drum-samples/Assorted Hits/Hi Hats/Zildjian K Hats/KHats Open-01.wav';
+			sample = 'samples/Cymatics - Orchid Sample Pack/Drum One Shots/Cymatics - Orchid Crash - Perfect.wav';
 			break;
 		case '2':
-			sample = 'samples/musicradar-drum-samples/Assorted Hits/Hi Hats/Zildjian K Hats/KHats Open-05.wav';
+			sample = 'samples/Cymatics - Orchid Sample Pack/Drum One Shots/Cymatics - Orchid Ride - Mysterious.wav';
 			break;
 		case '3':
-			sample = 'samples/musicradar-drum-samples/Assorted Hits/Hi Hats/Zildjian K Hats/KHats Open-04.wav';
+			sample = 'samples/Cymatics - Orchid Sample Pack/Drum One Shots/Cymatics - Orchid Percussion - Wet 1 (C).wav';
 			break;
 		case '4':
-			sample = 'samples/musicradar-drum-samples/Assorted Hits/Hi Hats/Zildjian K Hats/KHats Open-02.wav';
+			sample = 'samples/Cymatics - Orchid Sample Pack/One Shots/Cymatics - Orchid KEYS Swirl (C).wav';
 			break;
 		case 'q':
-			sample = 'samples/musicradar-drum-samples/Assorted Hits/Hi Hats/Zildjian K Hats/KHats Clsd-02.wav';
+			sample = 'samples/Cymatics - Orchid Sample Pack/Drum One Shots/Cymatics - Orchid Hihat - Closed 3.wav';
 			break;
 		case 'w':
-			sample = 'samples/musicradar-drum-samples/Assorted Hits/Hi Hats/Zildjian K Hats/KHats Clsd-03.wav';
+			sample = 'samples/Cymatics - Orchid Sample Pack/Drum One Shots/Cymatics - Orchid Hihat - Roll 3.wav';
 			break;
 		case 'e':
-			sample = 'samples/musicradar-drum-samples/Assorted Hits/Hi Hats/Zildjian K Hats/KHats Clsd-05.wav';
+			sample = 'samples/Cymatics - Orchid Sample Pack/Drum One Shots/Cymatics - Orchid Hihat - Flam.wav';
 			break;
 		case 'r':
-			sample = 'samples/musicradar-drum-samples/Assorted Hits/Hi Hats/Zildjian K Hats/KHats Clsd-07.wav';
+			sample = 'samples/Cymatics - Orchid Sample Pack/Drum One Shots/Cymatics - Orchid Hihat - Open 2.wav';
 			break;
 		case 'a':
-			sample = 'samples/musicradar-drum-samples/Assorted Hits/Snares/Sonor Force 3000/CYCdh_SonFlam-01.wav';
+			sample = 'samples/Cymatics - Orchid Sample Pack/Drum One Shots/Cymatics - Orchid Snare - Lustbug (C).wav';
 			break;
 		case 's':
-			sample = 'samples/musicradar-drum-samples/Assorted Hits/Snares/Sonor Force 3000/CYCdh_SonFlam-03.wav';
+			sample = 'samples/Cymatics - Orchid Sample Pack/Drum One Shots/Cymatics - Orchid Snare - Breeze (E).wav';
 			break;
 		case 'd':
-			sample = 'samples/musicradar-drum-samples/Assorted Hits/Snares/Sonor Force 3000/CYCdh_Sonrim-01.wav';
+			sample = 'samples/Cymatics - Orchid Sample Pack/Drum One Shots/Cymatics - Orchid Clap - Basic.wav';
 			break;
 		case 'f':
-			sample = 'samples/musicradar-drum-samples/Assorted Hits/Snares/Sonor Force 3000/CYCdh_SonsdSt-05.wav';
+			sample = 'samples/Cymatics - Orchid Sample Pack/Drum One Shots/Cymatics - Orchid Rimshot - Underwater.wav';
 			break;
 		case 'z':
-			sample = 'samples/musicradar-drum-samples/Assorted Hits/Kicks/Acoustic/CYCdh_AcouKick-01.wav';
+			sample = 'samples/Cymatics - Orchid Sample Pack/808s & Basses/Cymatics - Orchid 808 Cyclical (C).wav';
 			break;
 		case 'x':
-			sample = 'samples/musicradar-drum-samples/Assorted Hits/Kicks/Acoustic/CYCdh_AcouKick-08.wav';
+			sample = 'samples/Cymatics - Orchid Sample Pack/808s & Basses/Cymatics - Orchid 808 Rum (C).wav';
 			break;
 		case 'c':
-			sample = 'samples/musicradar-drum-samples/Assorted Hits/Kicks/Acoustic/CYCdh_AcouKick-12.wav';
+			sample = 'samples/Cymatics - Orchid Sample Pack/Drum One Shots/Cymatics - Orchid Kick - Clean (F).wav';
 			break;
 		case 'v':
-			sample = 'samples/musicradar-drum-samples/Assorted Hits/Kicks/Acoustic/CYCdh_AcouKick-20.wav';
+			sample = 'samples/Cymatics - Orchid Sample Pack/Drum One Shots/Cymatics - Orchid Kick - Tight (G).wav';
 			break;
 
 		default:
@@ -77,6 +78,6 @@ function makeSound(key) {
 	}
 }
 
-function padColorChange(id, color) {
+function buttonAnimation(id, color) {
 	document.getElementById(id).style.backgroundColor = color;
 }
